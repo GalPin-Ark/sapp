@@ -1,3 +1,9 @@
+<script>
+  import {
+    Button, Card, CardBody, CardFooter, CardHeader,
+    CardImg, CardSubtitle, CardText, CardTitle
+  } from "sveltestrap";
+</script>
 <style>
 	h1, figure, p {
 		text-align: center;
@@ -34,9 +40,23 @@
 
 <svelte:head>
 	<title>Sapper project template</title>
+
 </svelte:head>
 
-<h1>Good job!</h1>
+<Card class="mb-3">
+  <CardHeader>
+    <CardTitle>Card title</CardTitle>
+  </CardHeader>
+  <CardBody>
+    <CardSubtitle>Card subtitle</CardSubtitle>
+    <CardText>
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </CardText>
+    <Button on:click={()=> alert("button")}>Button</Button>
+  </CardBody>
+  <CardFooter>Footer</CardFooter>
+</Card>
 
 <figure>
 	<img alt='Borat' src='great-success.png'>
