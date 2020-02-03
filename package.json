@@ -32,7 +32,6 @@
     "rollup-plugin-babel": "^4.0.2",
     "rollup-plugin-svelte": "^5.0.1",
     "rollup-plugin-terser": "^4.0.4",
-    "sveltestrap": "^3.3.0",
-    "svelte-material-ui": "^1.0.0-beta.19"
+    "sveltestrap": "^3.3.0"
   }
 }
