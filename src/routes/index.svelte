@@ -3,6 +3,7 @@
     Button, Card, CardBody, CardFooter, CardHeader,
     CardImg, CardSubtitle, CardText, CardTitle
   } from "sveltestrap";
+  const color = "info"
 </script>
 <style>
 	h1, figure, p {
@@ -53,7 +54,7 @@
       Some quick example text to build on the card title
       and make up the bulk of the card's content.
     </CardText>
-    <Button on:click={()=> alert("button")}>Button</Button>
+    <Button {color} on:click={()=> alert("button")}>Button</Button>
   </CardBody>
   <CardFooter>Footer</CardFooter>
 </Card>
